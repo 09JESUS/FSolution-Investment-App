@@ -1,0 +1,162 @@
+<!-- Styles for Invest Page -->
+<style>
+  .invest-hero {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background: url("/static/investment.jpg") center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    box-sizing: border-box;
+  }
+  .invest-hero-overlay {
+    background: linear-gradient(90deg, #1e3c72cc 0%, #43e97bcc 100%);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(30, 60, 114, 0.18);
+    color: #fff;
+    padding: 2.5rem 2.5rem;
+    max-width: 600px;
+    text-align: center;
+    z-index: 2;
+    margin-left: -500px;
+  }
+  .invest-hero-overlay h1 {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 900;
+    margin-bottom: 0.7rem;
+    letter-spacing: 2px;
+    color: #43e97b;
+    text-shadow: 0 2px 12px rgba(30, 60, 114, 0.32);
+  }
+  .invest-hero-overlay p {
+    font-size: 1.18rem;
+    font-weight: 500;
+    color: #e3e6f3;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 2px 12px rgba(30, 60, 114, 0.22);
+  }
+  .invest-btn {
+    background: linear-gradient(90deg, #43e97b 0%, #2a5298 100%);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 16px 0 rgba(67, 233, 123, 0.15);
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 1.2rem;
+  }
+  .invest-btn:hover {
+    background: linear-gradient(90deg, #2a5298 0%, #43e97b 100%);
+  }
+</style>
+
+<!-- Hero Section with Overlay Text -->
+<div class="invest-hero">
+  <div class="invest-hero-overlay">
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.2rem;
+      "
+    >
+      <a
+        href="/"
+        style="display: flex; align-items: center; justify-content: center"
+      >
+        <div
+          class="fs-logo"
+          style="
+            width: 56px;
+            height: 56px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(30, 60, 114, 0.12);
+          "
+        >
+          <svg
+            viewBox="0 0 70 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="width: 38px; height: 38px"
+          >
+            <rect x="10" y="10" width="50" height="50" rx="12" fill="#fff" />
+            <text
+              x="35"
+              y="42"
+              text-anchor="middle"
+              font-size="20"
+              font-family="Arial Black, Arial, sans-serif"
+              fill="#1e3c72"
+              font-weight="bold"
+            >
+              FS
+            </text>
+            <polyline
+              points="20,50 35,20 50,50"
+              stroke="#2a5298"
+              stroke-width="3"
+              fill="none"
+            />
+          </svg>
+        </div>
+      </a>
+    </div>
+    <h1>Welcome to FSolution</h1>
+    <p>
+      Thank you for choosing us for your investment needs. We are dedicated to
+      ensuring your journey with us is smooth and rewarding.<br /><br />
+      As per FSCA requirements we need to confirm your eligibility to
+      participate in these investment opportunities.<br /><br />
+      Please know that your security is paramount to us, and we've taken steps
+      to make this verification process as effortless as possible for you.
+    </p>
+    <button class="invest-btn" onclick="window.location.href='/login'">
+      Continue
+    </button>
+  </div>
+</div>
+
+<!-- Footer -->
+<div
+  style="
+    background: linear-gradient(90deg, #2a5298 0%, #43e97b 100%);
+    color: #fff;
+    padding: 2.2rem 0 1.2rem 0;
+    text-align: center;
+    font-size: 1.08rem;
+    margin-top: 2.5rem;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    box-shadow: 0 -2px 16px 0 rgba(67, 233, 123, 0.08);
+  "
+>
+  <div style="margin-bottom: 1.1rem; font-weight: 700">
+    Copyright © 2025 FSolution Capital (Pty) Ltd. All rights reserved.
+  </div>
+  <div style="font-size: 0.98rem; color: #e3e6f3; margin-bottom: 1.2rem">
+    FSolution Capital (Pty) Ltd is an authorised Financial Services Provider
+    (FSP 46449) in terms of The Financial Advisory and Intermediary Services Act
+    (37 of 2002)
+  </div>
+  <div
+    style="
+      margin-top: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+    "
+  ></div>
+</div>

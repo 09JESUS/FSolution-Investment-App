@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Investment Result{% endblock %}
+{% block content %}
+{% if error %}
+  <div class="alert alert-danger text-center">{{ error }}</div>
+  <div class="text-center">
+    <a href="/invest" class="btn btn-secondary">Try Again</a>
+  </div>
+{% else %}
+  <div class="card mx-auto text-center" style="max-width: 500px;">
+    <div class="card-body">
+      <h4 class="card-title">{{ plan.name }} Summary</h4>
+      <p>Amount Invested: <strong>R{{ amount }}</strong></p>
+      <p>Interest Rate: <strong>{{ plan.rate }}%</strong></p>
+      <p>Return After 1 Year: <strong>R{{ final_return }}</strong></p>
+      <a href="/invest" class="btn btn-success mt-3">Back to Calculator</a>
+    </div>
+  </div>
+{% endif %}
+{% endblock %}
