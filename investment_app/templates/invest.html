@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Investment Calculator{% endblock %}
+{% block content %}
+<div class="card mx-auto" style="max-width: 500px;">
+  <div class="card-body">
+    <h4 class="card-title text-center">Investment Calculator</h4>
+    <form method="post">
+      <div class="mb-3">
+        <label class="form-label">Age</label>
+        <input type="number" name="age" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Amount (R)</label>
+        <input type="number" name="amount" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Select Plan</label>
+        <select name="plan" class="form-select">
+          {% for key, plan in plans.items() %}
+          <option value="{{ key }}">{{ plan.name }} - {{ plan.rate }}% Interest</option>
+          {% endfor %}
+        </select>
+      </div>
+      <button type="submit" class="btn btn-dark w-100">Calculate Return</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

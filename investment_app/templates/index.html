@@ -1,0 +1,803 @@
+{% block title %}{% endblock %} {% block content %}
+<style>
+    body {
+      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+      min-height: 100vh;
+    }
+    .fs-navbar {
+      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+      padding: 0.75rem 2rem;
+  <main>
+    <!-- Hero Section -->
+    <section class="fs-hero">
+      <h1>REAL VALUE</h1>
+      <p>can be found in the most overlooked and unconsidered places</p>
+      <div class="fs-cta">
+        <a href="#" class="fs-btn-green">Compare Investment Options</a>
+        <a href="#" class="fs-btn-white">Call Me Back</a>
+      </div>
+      <div style="font-size:1.2rem;color:#1e3c72;font-weight:600;">Elevate your investment strategically.</div>
+      <div style="font-size:1rem;color:#2a5298;margin-top:0.5rem;">As an investor, you need a partner who can reveal the unseen potential and opportunities that others overlook.</div>
+    </section>
+
+    <!-- Product Highlights -->
+    <section class="fs-products">
+      <div class="fs-product">
+        <h4>Private Equity</h4>
+        <div class="fs-rate">From 13.2% per annum</div>
+        <div class="fs-term">Term: 5 years</div>
+        <div class="fs-desc">Grow your wealth your way—choose to boost your capital or enjoy monthly dividends. Earn up to 13.2% per annum with zero fees.</div>
+      </div>
+      <div class="fs-product">
+        <h4>Fixed Return Portfolio</h4>
+        <div class="fs-rate">From 12.6% per annum</div>
+        <div class="fs-term">Term: 5 years</div>
+        <div class="fs-desc">Begin your investment journey with a competitive 12.6% rate and the assurance of 100% capital protection, backed by a trusted bank.</div>
+      </div>
+      <div class="fs-product">
+        <h4>USD Offshore Global Note</h4>
+        <div class="fs-rate">100% Capital protection</div>
+        <div class="fs-term">Term: 5 years</div>
+        <div class="fs-desc">Expand your wealth globally with tailored multi-asset allocations, ensuring 100% capital protection upon maturity.</div>
+      </div>
+      <div class="fs-product">
+        <h4>Short Term</h4>
+        <div class="fs-rate">From 11% per annum</div>
+        <div class="fs-term">Term: 12 months</div>
+        <div class="fs-desc">Unlock the potential of short-term private equity with the Flexi Access product—offering flexible access to your payouts when you need them.</div>
+      </div>
+      <div class="fs-product">
+        <h4>Digital Investing</h4>
+        <div class="fs-rate">Zero fees</div>
+        <div class="fs-term">Term: 5 years</div>
+        <div class="fs-desc">Let FSolution’s robo advice guide you to the perfect investment option tailored to your goals—in just under 10 minutes!</div>
+      </div>
+    </section>
+
+    <!-- Open Door Policy & Advisor Section -->
+    <section class="fs-section">
+      <div class="fs-card">
+        <h3>Open Door Policy</h3>
+        <p>Our doors are always open, and we welcome our clients to come and tour our world-class facilities, enjoy a cup of coffee and meet our advisors.</p>
+        <a href="#" class="fs-btn-green">Book a Visit</a>
+      </div>
+      <div class="fs-card">
+        <h3>Join FSolution as an Independent Advisor</h3>
+        <p>At FSolution, we value the role that independent financial advisors play in taking care of their client’s financial wellness through sound advice.</p>
+        <a href="#" class="fs-btn-white">Learn More</a>
+      </div>
+    </section>
+  </main>
+      margin-bottom: 2rem;
+    }
+    .fs-hero .fs-cta {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .fs-btn-green {
+      background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+      color: #fff;
+      font-weight: 600;
+      border-radius: 1rem;
+      border: none;
+      box-shadow: 0 4px 16px 0 rgba(67, 233, 123, 0.15);
+      padding: 0.75rem 2.5rem;
+      font-size: 1.1rem;
+      transition: background 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .fs-btn-green:hover {
+      background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+      color: #fff;
+    }
+    .fs-btn-white {
+      background: #fff;
+      color: #1e3c72;
+      font-weight: 600;
+      border-radius: 1rem;
+      border: none;
+      box-shadow: 0 4px 16px 0 rgba(30, 60, 114, 0.1);
+      padding: 0.75rem 2.5rem;
+      font-size: 1.1rem;
+      transition: background 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .fs-btn-white:hover {
+      background: #e3e6f3;
+      color: #1e3c72;
+    }
+    .fs-products {
+      max-width: 1100px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+    .fs-product {
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 16px 0 rgba(30, 60, 114, 0.1);
+      padding: 2rem 1.5rem;
+      color: #1e3c72;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 320px;
+      position: relative;
+    }
+    .fs-product h4 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #2a5298;
+    }
+    .fs-product .fs-rate {
+      font-size: 1.1rem;
+      color: #43e97b;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .fs-product .fs-term {
+      font-size: 1rem;
+      color: #1e3c72;
+      margin-bottom: 0.5rem;
+    }
+    .fs-product .fs-desc {
+      font-size: 1rem;
+      color: #2a5298;
+      margin-bottom: 1rem;
+    }
+    .fs-footer {
+      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+      color: #fff;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+      margin-top: 3rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      font-size: 1rem;
+    }
+    .fs-footer .fs-footer-links {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      font-weight: 600;
+    }
+    .fs-footer .fs-footer-contact {
+      margin-bottom: 1rem;
+      color: #43e97b;
+      font-weight: 600;
+    }
+</style>
+
+<!-- Navigation Bar -->
+<div
+  class="fs-navbar"
+  style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(30, 60, 114, 0.1);
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  "
+>
+  <div
+    style="
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 2.5rem;
+      box-sizing: border-box;
+    "
+  >
+    <!-- Logo Section -->
+    <div style="display: flex; align-items: center; gap: 1.2rem;">
+      <a
+        href="/"
+        style="display: flex; align-items: center; text-decoration: none"
+      >
+        <div
+          class="fs-logo"
+          style="
+            width: 48px;
+            height: 48px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(30, 60, 114, 0.1);
+          "
+        >
+          <svg
+            viewBox="0 0 70 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="width: 32px; height: 32px"
+          >
+            <rect x="10" y="10" width="50" height="50" rx="12" fill="#fff" />
+            <text
+              x="35"
+              y="42"
+              text-anchor="middle"
+              font-size="22"
+              font-family="Arial Black, Arial, sans-serif"
+              fill="#1e3c72"
+              font-weight="bold"
+            >
+              FS
+            </text>
+            <polyline
+              points="20,50 35,20 50,50"
+              stroke="#2a5298"
+              stroke-width="3"
+              fill="none"
+            />
+          </svg>
+        </div>
+        <span
+          style="
+            font-size: 1.35rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #fff;
+            margin-left: 0.4rem;
+          "
+          >FSolution</span
+        >
+      </a>
+    </div>
+    <!-- Navigation Links -->
+    <nav class="fs-nav" style="display: flex; gap: 2.7rem; align-items: center;">
+      <a href="#" style="color: #fff; font-weight: 700; font-size: 1.08rem; text-decoration: none; padding: 0.3rem 1.2rem; border-radius: 0.5rem; transition: background 0.2s;">Investments</a>
+      <a href="#" style="color: #fff; font-weight: 700; font-size: 1.08rem; text-decoration: none; padding: 0.3rem 1.2rem; border-radius: 0.5rem; transition: background 0.2s;">Digital Investing</a>
+      <a href="#" style="color: #fff; font-weight: 700; font-size: 1.08rem; text-decoration: none; padding: 0.3rem 1.2rem; border-radius: 0.5rem; transition: background 0.2s;">Insurance</a>
+      <a href="#" style="color: #fff; font-weight: 700; font-size: 1.08rem; text-decoration: none; padding: 0.3rem 1.2rem; border-radius: 0.5rem; transition: background 0.2s;">About FSolution</a>
+      <a href="#" style="color: #fff; font-weight: 700; font-size: 1.08rem; text-decoration: none; padding: 0.3rem 1.2rem; border-radius: 0.5rem; transition: background 0.2s;">FSolution in the News</a>
+      <a href="#" style="color: #fff; font-weight: 700; font-size: 1.08rem; text-decoration: none; padding: 0.3rem 1.2rem; border-radius: 0.5rem; transition: background 0.2s;">Contact</a>
+    </nav>
+    <!-- Actions -->
+    <div
+      class="fs-actions"
+      style="display: flex; gap: 1.7rem; align-items: center;"
+    >
+      <a href="#" class="fs-btn-green">Invest Now</a>
+      <a href="/login" class="fs-btn-white">Login</a>
+    </div>
+  </div>
+  <style>
+    .fs-nav a:hover {
+      background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+      color: #1e3c72 !important;
+    }
+  </style>
+</div>
+
+<!-- Hero Section -->
+<div class="fs-hero" style="width: 100%; min-height: 420px; background: url('/static/hero-plant-coins.jpg') center center/cover no-repeat; display: flex; align-items: center;">
+  <div style="max-width: 700px; margin-left: 4.5rem; padding: 3.5rem 2rem; background: rgba(30, 60, 114, 0.08); border-radius: 1.5rem;">
+    <h1 style="font-size: 3rem; font-weight: 900; color: #fff; margin-bottom: 0.7rem; letter-spacing: 2px; text-shadow: 0 2px 12px rgba(30,60,114,0.18);">REAL VALUE</h1>
+    <div style="font-size: 1.35rem; color: #fff; font-weight: 600; margin-bottom: 1.2rem; text-shadow: 0 2px 12px rgba(30,60,114,0.18);">CAN BE FOUND IN THE MOST OVERLOOKED AND UNCONSIDERED PLACES</div>
+    <div style="display: flex; gap: 1.2rem; margin-bottom: 1.5rem;">
+      <a href="#" class="fs-btn-green" style="font-size: 1.08rem; padding: 0.7rem 2.2rem;">Compare Investment Options</a>
+      <a href="#" class="fs-btn-white" style="font-size: 1.08rem; padding: 0.7rem 2.2rem;">Call Me Back</a>
+    </div>
+    <div style="font-size: 1.18rem; color: #fff; font-weight: 600; margin-bottom: 0.5rem; text-shadow: 0 2px 12px rgba(30,60,114,0.18);">Elevate your investment strategically.</div>
+    <div style="font-size: 1.08rem; color: #e3e6f3; margin-top: 0.2rem; text-shadow: 0 2px 12px rgba(30,60,114,0.18);">As an investor, you need a partner who can reveal the unseen potential and opportunities that others overlook.</div>
+  </div>
+</div>
+
+<!-- Product Highlights -->
+<!-- Product Highlights -->
+<div class="fs-products">
+  <div class="fs-product">
+    <h4>Private Equity</h4>
+    <div class="fs-rate">From 13.2% per annum</div>
+    <div class="fs-term">Term: 5 years</div>
+    <div class="fs-desc">Grow your wealth your way—choose to boost your capital or enjoy monthly dividends. Earn up to 13.2% per annum with zero fees.</div>
+  </div>
+  <div class="fs-product">
+    <h4>Fixed Return Portfolio</h4>
+    <div class="fs-rate">From 12.6% per annum</div>
+    <div class="fs-term">Term: 5 years</div>
+    <div class="fs-desc">Begin your investment journey with a competitive 12.6% rate and the assurance of 100% capital protection, backed by a trusted bank.</div>
+  </div>
+  <div class="fs-product">
+    <h4>USD Offshore Global Note</h4>
+    <div class="fs-rate">100% Capital protection</div>
+    <div class="fs-term">Term: 5 years</div>
+    <div class="fs-desc">Expand your wealth globally with tailored multi-asset allocations, ensuring 100% capital protection upon maturity.</div>
+  </div>
+  <div class="fs-product">
+    <h4>Short Term</h4>
+    <div class="fs-rate">From 11% per annum</div>
+    <div class="fs-term">Term: 12 months</div>
+    <div class="fs-desc">Unlock the potential of short-term private equity with the Flexi Access product—offering flexible access to your payouts when you need them.</div>
+  </div>
+  <div class="fs-product">
+    <h4>Digital Investing</h4>
+    <div class="fs-rate">Zero fees</div>
+    <div class="fs-term">Term: 5 years</div>
+    <div class="fs-desc">Let FSolution’s robo advice guide you to the perfect investment option tailored to your goals—in just under 10 minutes!</div>
+  </div>
+</div>
+
+<!-- Open Door Policy & Advisor Section -->
+<div class="container" style="max-width: 1100px; margin: 3rem auto">
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <h3 style="color: #1e3c72; font-weight: 700">Open Door Policy</h3>
+      <p style="color: #2a5298; font-size: 1.1rem">
+        Our doors are always open, and we welcome our clients to come and tour
+        our world-class facilities, enjoy a cup of coffee and meet our advisors.
+      </p>
+      <a href="#" class="fs-btn-green">Book a Visit</a>
+    </div>
+    <div class="col-md-6 mb-4">
+      <h3 style="color: #1e3c72; font-weight: 700">
+        Join FSolution as an Independent Advisor
+      </h3>
+      <p style="color: #2a5298; font-size: 1.1rem">
+        At FSolution, we value the role that independent financial advisors play
+        in taking care of their client’s financial wellness through sound
+        advice.
+      </p>
+      <a href="#" class="fs-btn-white">Learn More</a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<style>
+  .fs-footer {
+    background: linear-gradient(90deg, #2a5298 0%, #43e97b 100%);
+    color: #fff;
+    padding: 2.5rem 0 1.5rem 0;
+    text-align: center;
+    margin-top: 3rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    font-size: 1rem;
+    box-shadow: 0 -4px 16px 0 rgba(67, 233, 123, 0.1);
+    position: relative;
+    z-index: 2;
+  }
+  .fs-footer .fs-footer-links {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 700;
+    font-size: 1.08rem;
+  }
+  .fs-footer .fs-footer-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    border-radius: 0.7rem;
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(30, 60, 114, 0.1);
+  }
+  .fs-footer .fs-footer-links a:hover {
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    color: #1e3c72;
+  }
+  .fs-footer .fs-footer-contact {
+    margin-bottom: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.08rem;
+    letter-spacing: 1px;
+  }
+  .fs-footer .fs-footer-contact a {
+    color: #43e97b;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 0.5rem;
+    transition: color 0.2s;
+  }
+  .fs-footer .fs-footer-contact a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .fs-footer .fs-copyright {
+    margin-bottom: 0.7rem;
+    color: #e3e6f3;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+  .fs-footer .fs-legal {
+    font-size: 0.98rem;
+    color: #bfc8e6;
+    font-weight: 500;
+  }
+</style>
+// ...existing code...
+      <div
+        class="fs-logo"
+        style="
+          width: 36px;
+          height: 36px;
+          background: #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 2px 8px rgba(30, 60, 114, 0.1);
+        "
+      >
+        <svg
+          viewBox="0 0 70 70"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="width: 24px; height: 24px"
+        >
+          <rect x="10" y="10" width="50" height="50" rx="12" fill="#fff" />
+          <text
+            x="35"
+            y="42"
+            text-anchor="middle"
+            font-size="18"
+            font-family="Arial Black, Arial, sans-serif"
+            fill="#1e3c72"
+            font-weight="bold"
+          >
+            FS
+          </text>
+          <polyline
+            points="20,50 35,20 50,50"
+            stroke="#2a5298"
+            stroke-width="3"
+            fill="none"
+          />
+        </svg>
+      </div>
+      <span
+        style="
+          font-size: 1.2rem;
+          font-weight: 800;
+          letter-spacing: 2px;
+          color: #fff;
+          margin-left: 0.2rem;
+        "
+        >FSolution</span
+      >
+    </a>
+    <a
+      href="/login"
+      class="fs-btn-white"
+      style="margin-left: 1.5rem; padding: 0.4rem 1.2rem; font-size: 1rem"
+      >Login</a
+    >
+  </div>
+  <div
+    style="
+      max-width: 1200px;
+      margin: 2rem auto 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.5rem;
+      align-items: start;
+    "
+  >
+    <div>
+      <div
+        style="
+          font-weight: 700;
+          font-size: 1.15rem;
+          margin-bottom: 1rem;
+          text-align: left;
+          padding-left: 0.2rem;
+        "
+      >
+        Products
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem;
+          align-items: flex-start;
+          text-align: left;
+          padding-left: 0.2rem;
+        "
+      >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >Investments</a
+        >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >Digital Investing</a
+        >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >Insurance</a
+        >
+      </div>
+    </div>
+    <div>
+      <div
+        style="
+          font-weight: 700;
+          font-size: 1.15rem;
+          margin-bottom: 1rem;
+          text-align: left;
+          padding-left: 0.2rem;
+        "
+      >
+        Company
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem;
+          align-items: flex-start;
+          text-align: left;
+          padding-left: 0.2rem;
+        "
+      >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >About</a
+        >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >Advisors</a
+        >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >Careers</a
+        >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >Reviews</a
+        >
+      </div>
+    </div>
+    <div>
+      <div
+        style="
+          font-weight: 700;
+          font-size: 1.15rem;
+          margin-bottom: 1rem;
+          text-align: left;
+          padding-left: 0.2rem;
+        "
+      >
+        Support
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem;
+          align-items: flex-start;
+          text-align: left;
+          padding-left: 0.2rem;
+        "
+      >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >Support</a
+        >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >News</a
+        >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >Legal</a
+        >
+        <a
+          href="#"
+          style="
+            color: #fff;
+            font-weight: 700;
+            background: rgba(67, 233, 123, 0.12);
+            padding: 0.3rem 1rem;
+            border-radius: 0.5rem;
+          "
+          >Contact</a
+        >
+      </div>
+    </div>
+    <div>
+      <div
+        style="
+          font-weight: 700;
+          font-size: 1.15rem;
+          margin-bottom: 1rem;
+          text-align: left;
+          padding-left: 0.2rem;
+        "
+      >
+        Stay In Touch
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem;
+          align-items: flex-start;
+          text-align: left;
+          padding-left: 0.2rem;
+        "
+      >
+        <span style="display: flex; align-items: center; gap: 0.5rem"
+          ><span style="font-size: 1.2rem">📞</span>
+          <a
+            href="tel:0762852630"
+            style="
+              color: #43e97b;
+              font-weight: 700;
+              text-decoration: none;
+              background: rgba(67, 233, 123, 0.12);
+              padding: 0.3rem 1rem;
+              border-radius: 0.5rem;
+            "
+            >076 285 2630</a
+          ></span
+        >
+        <span style="display: flex; align-items: center; gap: 0.5rem"
+          ><span style="font-size: 1.2rem">📘</span>
+          <a
+            href="#"
+            style="
+              color: #43e97b;
+              font-weight: 700;
+              text-decoration: none;
+              background: rgba(67, 233, 123, 0.12);
+              padding: 0.3rem 1rem;
+              border-radius: 0.5rem;
+            "
+            >Facebook</a
+          ></span
+        >
+        <span style="display: flex; align-items: center; gap: 0.5rem"
+          ><span style="font-size: 1.2rem">🔗</span>
+          <a
+            href="#"
+            style="
+              color: #43e97b;
+              font-weight: 700;
+              text-decoration: none;
+              background: rgba(67, 233, 123, 0.12);
+              padding: 0.3rem 1rem;
+              border-radius: 0.5rem;
+            "
+            >LinkedIn</a
+          ></span
+        >
+        <span style="display: flex; align-items: center; gap: 0.5rem"
+          ><span style="font-size: 1.2rem">💬</span>
+          <a
+            href="#"
+            style="
+              color: #43e97b;
+              font-weight: 700;
+              text-decoration: none;
+              background: rgba(67, 233, 123, 0.12);
+              padding: 0.3rem 1rem;
+              border-radius: 0.5rem;
+            "
+            >WhatsApp</a
+          ></span
+        >
+      </div>
+    </div>
+  </div>
+  <div
+    style="
+      max-width: 1200px;
+      margin: 2rem auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+    "
+  >
+    <div
+      class="fs-copyright"
+      style="color: #e3e6f3; font-size: 1.05rem; font-weight: 600"
+    >
+      Copyright © 2025 FSolution. All rights reserved.
+    </div>
+    <div
+      class="fs-legal"
+      style="
+        max-width: 700px;
+        font-size: 0.98rem;
+        color: #bfc8e6;
+        font-weight: 500;
+      "
+    >
+      FSolution is an Authorised Financial Services Provider (FSP 46449) in
+      terms of the Financial Advisory and Intermediary Services Act (37 of 2002)
+      and a multi asset product manager.
+    </div>
+  </div>
+</div>
+{% endblock %}

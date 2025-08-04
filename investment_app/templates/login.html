@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<style>
+  .fs-logo {
+    width:36px;height:36px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(30,60,114,0.10);
+  }
+  .fs-btn-white {
+    background: #fff;
+    color: #1e3c72;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 4px 16px 0 rgba(30,60,114,0.10);
+    padding: 0.3rem 1.1rem;
+    font-size: 1rem;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    margin-left:0.5rem;
+  }
+  .fs-btn-white:hover {
+    background: #e3e6f3;
+    color: #1e3c72;
+  }
+</style>
+<div class="card mx-auto" style="max-width: 400px;">
+  <div class="card-body">
+    <div style="display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;gap:0.7rem;">
+      <a href="/" style="display:flex;align-items:center;text-decoration:none;">
+        <div class="fs-logo">
+          <svg viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;">
+            <rect x="10" y="10" width="50" height="50" rx="12" fill="#fff"/>
+            <text x="35" y="42" text-anchor="middle" font-size="18" font-family="Arial Black, Arial, sans-serif" fill="#1e3c72" font-weight="bold">FS</text>
+            <polyline points="20,50 35,20 50,50" stroke="#2a5298" stroke-width="3" fill="none"/>
+          </svg>
+        </div>
+        <span style="font-size:1.2rem;font-weight:800;letter-spacing:2px;color:#1e3c72;margin-left:0.2rem;">FSolution</span>
+      </a>
+    </div>
+    <h3 class="card-title text-center">Login</h3>
+    <form method="post">
+      <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input type="text" name="username" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+    <div class="text-center mt-3">
+      <small>Don't have an account?
+        <a href="/signup" class="fs-btn-white">Sign up</a>
+      </small>
+    </div>
+  </div>
+</div>
+{% endblock %}
