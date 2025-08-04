@@ -45,6 +45,9 @@ def signup():
         except sqlite3.IntegrityError:
             flash("Username already exists.")
     return render_template('signup.html')
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -71,8 +74,6 @@ def logout():
 
 @app.route('/invest', methods=['GET', 'POST'])
 def invest():
-    if 'username' not in session:
-        return redirect(url_for('login'))
 
     if request.method == 'POST':
         try:
